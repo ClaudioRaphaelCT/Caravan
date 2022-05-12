@@ -1,0 +1,104 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.form {
+  width: 450px;
+  margin: 0 auto;
+}
+
+#navbar {
+  border-bottom: 1px solid grey;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+#navbar ul li {
+  margin-left: 1em;
+}
+
+.form-control-lg {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+.form-control-lg input {
+  padding: 5px;
+}
+
+.form-checkbox {
+  flex-direction: row;
+}
+
+.form-checkbox input {
+  padding: 5px;
+}
+
+#botao {
+  margin-top: 12%;
+  margin-bottom: 12%;
+  margin-left: 25%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+a:hover {
+  color: orange;
+}
+
+.centered {
+  margin: 0 auto !important;
+  float: none !important;
+  text-align: left;
+}
+
+.tituloDoadores {
+  background-color: rgba(0, 0, 0, 0.555);
+  color: white;
+  text-align: center;
+}
+
+.info {
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+.tituloInfo {
+  margin-bottom: 2%;
+}
+
+.listaDoacao {
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.titleDoacao {
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+li {
+  list-style-type: none;
+}

@@ -1,0 +1,37 @@
+<h1 class="mt-3">Adicione sua doação:</h1>
+
+<form action="/users/create" method="POST" class="form">
+  <div class="form-control-lg">
+    <label for="Name">Nome:</label>
+    <input type="text" name="name" placeholder="Ex: Matheus.." />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label id="texto" for="Locale">Local:</label>
+    <input type="text" name="locale" placeholder="Ex: Rua Xxxx" />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label for="Contact">Contato:</label>
+    <input type="text" name="contact" placeholder="Telefone ou E-mail" />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label id="texto" for="Item">Item:</label>
+    <select class="form-control-lg mb-5" name="item" type="text">
+      <option>Arroz</option>
+      <option>Cuscuz</option>
+      <option>Feijao</option>
+      <option>Macarrao</option>
+    </select>
+  </div>
+  <div class="form-control-lg mt-5">
+    <label id="texto" for="Quantity">Quantidade:</label>
+    <select class="form-control-lg mb-5" name="quantity" type="text">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+
+  <input class="btn btn-dark" id="botao" type="submit" value="Cadastrar" />
+</form>

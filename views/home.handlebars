@@ -1,0 +1,30 @@
+<div class="card col-sm-3 centered mt-5 mb-5" style="width: 100%; ">
+
+  <div class="card-body">
+    <h5 class="card-title">Doações de Junho</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Realize doações até o dia 15/06</h6>
+    <br />
+
+    <h5 class="tituloDoadores">Lista de doadores</h5>
+    {{#each users}}
+      <ul class="listaDoacao">
+        <p class="titleDoacao">{{this.name}} <p/>
+        <li>Item: {{this.item}} </li>
+        <li>Quantidade: {{this.quantity}}</li>
+        
+        <a href="/users/{{this.id}}">Mais detalhes</a>
+
+        <form class="ml-3" action="/users/delete/{{this.id}}" method="POST">
+          <input 
+          type="submit" 
+          value="Excluir" 
+          class="btn btn-outline-danger mt-3 ml-3 p-2" />
+
+          <a name="" id="" class="btn btn-outline-dark mt-3 ml-3 p-2" href="/users/edit/{{this.id}}" role="button">Editar</a>
+        </form>
+      </ul>
+          
+    {{/each}}
+
+  </div>
+</div>

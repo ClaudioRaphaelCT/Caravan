@@ -1,0 +1,51 @@
+<h1 class="mt-3">Editando: {{user.name}}</h1>
+<form action="/users/update" method="POST" class="form">
+  <input type="hidden" name="id" value="{{user.id}}" />
+  <div class="form-control-lg">
+    <label for="Name">Nome:</label>
+    <input
+      type="text"
+      name="name"
+      value="{{user.name}}"
+      placeholder="Ex: Matheus.."
+    />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label id="texto" for="Locale">Local:</label>
+    <input
+      type="text"
+      name="locale"
+      value="{{user.locale}}"
+      placeholder="Ex: Rua Xxxx"
+    />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label for="Contact">Contato:</label>
+    <input
+      type="text"
+      name="contact"
+      value="{{user.contact}}"
+      placeholder="Telefone ou E-mail"
+    />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label for="Item">Item:</label>
+    <input
+      type="text"
+      name="item"
+      value="{{user.item}}"
+      placeholder="Ex: Arroz, Feijão"
+    />
+  </div>
+  <div class="form-control-lg mt-5">
+    <label for="Quantity">Quantidade:</label>
+    <input
+      type="text"
+      name="quantity"
+      value="{{user.quantity}}"
+      placeholder="Ex: 1,2,3..."
+    />
+  </div>
+
+  <input class="btn btn-outline-dark" id="botao" type="submit" value="Editar" />
+</form>

@@ -1,0 +1,14 @@
+<div>
+  {{#each users}}
+
+    <h1 class="tituloInfo mt-3"> Total de itens doados :</h1>
+    <h2> {{this.total}} </h2>
+    <div class="btn-group col-sm centered mt-3" role="group">
+      <a class="btn btn-outline-primary" href="/quantity/arroz">Arroz</a>
+      <a class="btn btn-outline-warning" href="/quantity/cuscuz">Cuscuz</a>
+      <a class="btn btn-outline-secondary" href="/quantity/feijao">Feijao</a>
+      <a class="btn btn-outline-success" href="/quantity/macarrao">Macarrao</a>
+    </div>
+    <h2 class="mt-5 mb-5"> Total {{this.item}} : {{this.totalItem}} </h2>
+  {{/each}}
+</div>
